@@ -26,7 +26,7 @@
                                     <div class="card-body text-white">
                                       <h5 class="card-title">Lionel Messi</h5>
                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                      <button id="messi-btn" class="btn btn-primary px-5">Select</button>
+                                      <button class="btn btn-primary px-5" onclick= "addPlayer('Messi', this)">Select</button>
                                     </div>
                                   </div>
                             </div>
@@ -36,7 +36,7 @@
                                     <div class="card-body text-white">
                                       <h5 class="card-title">Ronaldo</h5>
                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                      <button id="ronaldo-btn" class="btn btn-primary px-5">Select</button>
+                                      <button class="btn btn-primary px-5" onclick= "addPlayer('Ronaldo', this)">Select</button>
                                     </div>
                                   </div>
                             </div>
@@ -46,7 +46,7 @@
                                     <div class="card-body text-white">
                                       <h5 class="card-title">neymar</h5>
                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                      <button id="neymar-btn" class="btn btn-primary px-5">Select</button>
+                                      <button class="btn btn-primary px-5 player-selected" onclick= "addPlayer('Neymar', this)">Select</button>
                                     </div>
                                   </div>
                             </div>
@@ -56,7 +56,7 @@
                                     <div class="card-body text-white">
                                       <h5 class="card-title">Lionel Messi-2</h5>
                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                      <button id="messi2-btn" class="btn btn-primary px-5">Select</button>
+                                      <button class="btn btn-primary px-5" onclick= "addPlayer('Messi-2', this)">Select</button>
                                     </div>
                                   </div>
                             </div>
@@ -66,7 +66,7 @@
                                     <div class="card-body text-white">
                                       <h5 class="card-title">Ronaldo-2</h5>
                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                      <button id="ronaldo2-btn" class="btn btn-primary px-5">Select</button>
+                                      <button class="btn btn-primary px-5" onclick= "addPlayer('Ronaldo-2', this)">Select</button>
                                     </div>
                                   </div>
                             </div>
@@ -76,7 +76,7 @@
                                     <div class="card-body text-white">
                                       <h5 class="card-title">Neymar-2</h5>
                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                      <button id="neymar2-btn" class="btn btn-primary px-5">Select</button>
+                                      <button class="btn btn-primary px-5" onclick= "addPlayer('Neymar-2', this)">Select</button>
                                     </div>
                                   </div>
                             </div>
@@ -96,12 +96,12 @@
                         </div>
                         <div class="budget text-white">
                             <h4>Per Player <input id="player-price" class="w-100" type="number"></h4>
-                            <button id="player-cost-btn" class="btn btn-primary w-100 mt-3"> Calculate </button>
+                            <button id="player-cost-btn" class="btn btn-primary w-100 mt-3" onclick="playerCost()"> Calculate </button>
                         </div>
                         <div class="total-cost mt-5 text-white">
                             <h4>Manager <input id="manager-cost" class="w-100" type="number"></h4>
                             <h4 class="mt-5">Coach <input id="coach-cost" class="w-100" type="number"></h4>
-                            <button id="total-cost" class="btn btn-primary w-100 mt-3 mb-4"> Calculate Total </button>
+                            <button id="total-cost" class="btn btn-primary w-100 mt-3 mb-4" onclick="totalCost()"> Calculate Total </button>
                             <h4>Total: $ <span id="total-amount">00</span></h4>
                         </div>
                     </div>
